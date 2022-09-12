@@ -1,0 +1,116 @@
+body {
+  width: 80vw;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Combo', cursive;
+  font-size: 80px;
+  margin: auto;
+  background-image: url("../img/capa.png");
+  background-size: contain;
+  width: 80%;
+  border-radius: 30px;
+  color: gold;
+}
+
+.formulario {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 5px auto 0px;
+  padding: 10px 0;
+  border-bottom: groove;
+}
+
+.data-nascimento {
+  font-family: 'Roboto', sans-serif;
+  padding: 4px;
+  margin-left: 5px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.botao-enviar {
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.botao-enviar:hover {
+  background: rgb(20, 20, 100);
+  color: white;
+}
+
+.botao-enviar:active {
+  background: rgb(0, 60, 255);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.imagem-zodiaco {
+  width: 500px;
+  z-index: -1;
+}
+
+.imagem-signo {
+  position: absolute;
+  top: 236px;
+}
+
+.seta {
+  width: 50px;
+  padding-bottom: 2px;
+}
+
+.nome-signo {
+  font-family: 'Combo', cursive;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nome-signo span {
+  font-size: small;
+}
+
+.oculto {
+  visibility: hidden;
+}
+
+.previsao {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border: groove;
+  border-style: dashed;
+  border-radius: 20px;
+
+  width: 80%;
+  margin: auto;
+}
+
+.previsao-nome-signo {
+  font-weight: bold;
+}
+
+.previsao-nome-signo, .previsao-signo {
+  margin: 0;
+  padding: 5px;
+}
