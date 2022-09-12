@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-	<title></title>
+	<title>Zodíaco</title>
 	<meta charset="utf-8" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,13 @@
 <body>
 	<header>Zodíaco</header>
 	<main>
-		<div class="formulario">
-			Data de nascimento:
-			<input class="data-nascimento" type="date">
-			<button class="botao-enviar">Enviar</button>
-			<hr>
+		<div>
+			<form class="formulario" action="#">
+				Data de nascimento:
+				<input class="data-nascimento" type="date" required>
+				<button class="botao-enviar" type="button">Enviar</button>
+				<button class="botao-reiniciar oculto" type="reset">Reiniciar</button>
+			</form>
 		</div>
 		<div class="container">
 			<h2 class="nome-signo">Áries</h2>
@@ -33,6 +35,7 @@
 	<footer></footer>
 	<script src="./scripts/script.js"></script>
 	<script src="./scripts/scraping.js"></script>
+	<script src="./scripts/signo.js"></script>
 </body>
 
 </html>

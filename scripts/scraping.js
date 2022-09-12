@@ -7,24 +7,22 @@ var previsaoSignos = [];
 var imagemSignosURL = [];
 var nomeSignos = [];
 
-function recuperaImagemSignos() {
+function carregaDadosSignos() {
   const data = new Date();
   let dia = "0" + data.getDate();
   let mes = "0" + (data.getMonth() + 1);
   dia = dia.slice(-2)
   mes = mes.slice(-2)
 
-  dia="11";
-
   let url = `https://www.metropoles.com/vida-e-estilo/horoscopo/horoscopo-2022-confira-a-previsao-de-hoje-${dia}-${mes}-para-seu-signo/`
 
   fetch(url)
     .then(Response => Response.text())
-    .then(result => scrapingImagens(result, "text/html"))
+    .then(result => webScraping(result, "text/html"))
     .catch(error => console.error("Error: " + error));
 }
 
-function scrapingImagens(string_html, content_type) {
+function webScraping(string_html, content_type) {
   let parser = new DOMParser();
   let doc = parser.parseFromString(string_html, content_type);
   var pai = doc.querySelector(".m-horoscope-block");
