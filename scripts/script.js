@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const previsaoNomeSignoAtual = document.querySelector(".previsao-nome-signo");
     const previsao = document.querySelector(".previsao");
     const botaoReiniciar = document.querySelector(".botao-reiniciar")
+    const botaoEnviar = document.querySelector(".botao-enviar");
 
     function contarSegundos() {
       if (rotate == -360) { rotate = 0 }
@@ -35,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
         previsaoSignoAtual.innerHTML = previsaoSignos[signoAtual] + "<span>(fonte: www.metropoles.com)</span>";
         previsao.classList.remove("oculto");
         botaoReiniciar.classList.remove("oculto");
+        botaoReiniciar.classList.remove("none");
+        botaoEnviar.classList.add("none");
       }
     }
     tempo = setInterval(contarSegundos, velocidade);
@@ -45,6 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const botaoEnviar = document.querySelector(".botao-enviar");
     const [year, month, day] = valorData.split('-');
     const dataAniversario = new Date(+year, +month - 1, +day);
+    if (isNaN(dataAniversario.valueOf())) {
+      return false;
+    };
     pararGiro = true;
     pararSigno = calculaSigno(dataAniversario) - 1;
     botaoEnviar.classList.add("oculto");
@@ -56,10 +62,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const previsao = document.querySelector(".previsao");
     pararGiro = false;
     botaoEnviar.classList.remove("oculto");
+    botaoEnviar.classList.remove("none");
     botaoReiniciar.classList.add("oculto");
+    botaoReiniciar.classList.add("none");
     previsao.classList.add("oculto");
-
-    start();
+        start();
   });
 
   function paraContarSegundos() {

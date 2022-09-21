@@ -1,21 +1,22 @@
 body {
-  width: 80vw;
   margin: auto;
+  width: 80vw;
 }
 
 header {
-  display: flex;
   align-content: center;
-  justify-content: center;
   align-items: center;
-  font-family: 'Combo', cursive;
-  font-size: 80px;
-  margin: auto;
   background-image: url("../img/capa.png");
   background-size: contain;
-  width: 80%;
   border-radius: 30px;
   color: gold;
+  display: flex;
+  font-family: 'Combo', cursive;
+  font-size: 80px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
 }
 
 .formulario {
@@ -100,6 +101,10 @@ header {
 
 .oculto {
   visibility: hidden;
+}
+
+.none {
+  display: none;
 }
 
 .previsao {
