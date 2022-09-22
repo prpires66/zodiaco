@@ -26,7 +26,7 @@ O Zodíaco é uma aplicação desenvolvida em Javascript que a partir da entrada
    ```
 > Para executar abra pelo browser o arquivo **index.html** localizado na raiz do projeto   
 
-### Colocar em produção
+## Colocar em produção
 Para disponibilizar a aplicação você pode utilizar o [GitHub Pages](https://pages.github.com/), [Vercel](https://vercel.com/) ou alguma das várias opções gratuitas disponíveis na internet.
 
 ## Licença
@@ -34,7 +34,7 @@ Para disponibilizar a aplicação você pode utilizar o [GitHub Pages](https://p
 
 > Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE.md) para mais detalhes.
 
-### Agradecimento
+## Agradecimento
 > Contribuições e sugestões são bem-vindas
 > 
 > Obrigado por acessar e compartilhar
